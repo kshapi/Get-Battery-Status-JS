@@ -1,0 +1,76 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  height: 100vh;
+}
+.main {
+  height: 300px;
+  width: 270px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#AB94E3,#8DBBC0);
+}
+.battery {
+  width: 150px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.battery p {
+  position: relative;
+  right: 20px;
+}
+.percentage {
+  font-size: 50px;
+}
+.battery .charger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.charger :nth-child(2) {
+  font-size: 19px;
+  font-weight: 600;
+}
+.indicate {
+  height: 200px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.indicate div {
+  height: 150px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+.indicate div span {
+  display: inline-block;
+  height: 0%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.fa-bolt {
+  position: absolute;
+  font-size: 26px;
+  opacity: 0.5;
+}
